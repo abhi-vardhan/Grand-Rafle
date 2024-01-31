@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="winner.html">Winners</a>
+        <a href="history.html">Transaction History</a>
+        <a href="coupons.html">My Coupons</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+      
+    <div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="icon">&#9776; </span>
+        
+    </div>
+    <div>
+        <img src="grand.jpeg" alt="" width="100%">
+    </div>
+    <h1 style="text-align: center; font-size: 50px; margin:20px 10px">Transaction History</h1>
+    
+    </div>
+      
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+</body>
+</html>

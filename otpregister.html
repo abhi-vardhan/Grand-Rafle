@@ -5,20 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="otplogstyle.css">
     <title>The Grand Rafle</title>
+    <script>
+        // let popup = document.getElementById("popup");
+        function openPopup(){
+            document.getElementById("popup").style.display = "block";
+        }
+    
+        function closePopup(){
+            popup.classList.remove(".open-popup");
+        }
+    </script>
 </head>
 <body>
-    <form action="lobby.html" class="form">
-        <span class="title">Enter OTP</span>
-        <p class="text">We have sent a verification code to your mobile number </p>
-        <div class="inputContainer">
-            <input type="text" maxlength="1" required oninput="handleInput(1, event)" onkeydown="handleBackspace(1, event)">
-            <input type="text" maxlength="1" required oninput="handleInput(2, event)" onkeydown="handleBackspace(2, event)" >
-            <input type="text" maxlength="1" required oninput="handleInput(3, event)" onkeydown="handleBackspace(3, event)" >
-            <input type="text" maxlength="1" required oninput="handleInput(4, event)" onkeydown="handleBackspace(4, event)" >
-            
-        </div>
-        <a href="lobby.html"><button class="verifyBtn" type="submit" >Submit</button></a>
-    </form>
+
+    <div>
+        <form class="form">
+            <span class="title">Enter OTP</span>
+            <p class="text">We have sent a verification code to your mobile number </p>
+            <div class="inputContainer">
+                <input type="text" maxlength="1" required ">
+                <input type="text" maxlength="1" required " >
+                <input type="text" maxlength="1" required " >
+                <input type="text" maxlength="1" required " >
+                
+            </div>
+            <button class="myBtn" type="submit" onclick="openForm()" >Submit</button>
+        </form>
+
+       
+
+
+
+    </div>
+
+    
+
+<div class="form-popup" id="myForm" class="popup">
+  <form action="home.html" class="form-container">
+    <h3>Enter Details</h3>
+
+    <label for="name" style="align-self: left;"><b>Name</b></label>
+    <input type="text" placeholder="First Name" name="name" required>
+    <input type="text" placeholder="Middle Name" name="name" >
+    <input type="text" placeholder="Last Name" name="name" required>
+
+    <label for="aadhar"><b>Aadhar Number</b></label>
+    <input type="text" placeholder="Aadhar Number" name="aadhar" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add(".open-popup");
+        }
+</script>
+    
     
 
 

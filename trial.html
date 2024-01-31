@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trial.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="center">
+        
+        <input type="checkbox" id="show">
+        <label for="show" class="show-btn">View Form</label>
+        <div class="container">
+
+           <label for="show" class="close-btn fas fa-times" title="close"></label>
+           <div class="text">
+              User Details
+           </div>
+           <form action="lobby.html">
+              <div class="data">
+                 <label>Name</label>
+                 <input type="text" placeholder="FirstName">
+              </div>
+              <div class="data">
+                 <label>Aadhar Number</label>
+                 <input type="text" placeholder="Aadhar Number">
+              </div>
+              <div class="btn">
+                 <div class="inner"></div>
+                 <button type="submit">Submit</button>
+              </div>
+           </form>
+        </div>
+     </div>
 </body>
 </html>

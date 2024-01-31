@@ -2,24 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #5F75A2;
 }
 
 .user-img{
     width: 50px;
     border-radius: 100%;
     border: 1px solid #eee;
+    opacity: 0;
 }
+
+.sidebar.active .user-img{
+    opacity: 1;
+}
+
 
 
 .sidebar{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height:100%;
     width: 80px;
-    background-color: #12171e;
+   /* background-color: #12171e; */
+   background-color: transparent;
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
+    position: fixed;
 }
 
 .sidebar.active ~ .main-content{
@@ -114,6 +123,14 @@
     background-color: #eee;
     color: #12171e;
 }
+.sidebar ul li i:hover {
+    background-color: #eee;
+    color: #12171e;
+}
+.sidebar ul li .nav-item:hover {
+    background-color: #eee;
+    color: #12171e;
+}
 
 .sidebar ul li a i {
     min-width: 50px;
@@ -121,6 +138,11 @@
     height: 50px;
     border-radius: 12px;
     line-height: 50px;
+    opacity: 0;
+}
+
+.sidebar.active ul li a i{
+    opacity: 1;
 }
 
 .sidebar .nav-item {
@@ -135,6 +157,7 @@
     position: absolute;
     left: 135px;
     top: 50%;
+    background-color: #eee;
     transform: translate(-50%, -50%);
     box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
     border-radius: 0.6rem;
@@ -166,5 +189,24 @@
 .container {
     display: flex;
     justify-content: space-between;
+}
+
+.main-content .contactus{
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    opacity: 90%;
+    max-width: 800px;
+    height: 100px;
+    margin: 200px auto 100px;
+    padding: 10px 45px 30px 45px;
+    align-items: center;
+    align-content: center;
+ 
+   
+}
+
+.main-content .contactus .conh1{
+    font-size: 60dp;
 }
 
