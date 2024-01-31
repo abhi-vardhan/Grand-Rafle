@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="otplogstyle.css">
+    <title>The Grand Rafle</title>
+</head>
+<body>
+    <form action="lobby.html" class="form">
+        <span class="title">Enter OTP</span>
+        <p class="text">We have sent a verification code to your mobile number </p>
+        <div class="inputContainer">
+            <input type="text" maxlength="1" required oninput="handleInput(1, event)" onkeydown="handleBackspace(1, event)">
+            <input type="text" maxlength="1" required oninput="handleInput(2, event)" onkeydown="handleBackspace(2, event)" >
+            <input type="text" maxlength="1" required oninput="handleInput(3, event)" onkeydown="handleBackspace(3, event)" >
+            <input type="text" maxlength="1" required oninput="handleInput(4, event)" onkeydown="handleBackspace(4, event)" >
+            
+        </div>
+        <a href="lobby.html"><button class="verifyBtn" type="submit" >Submit</button></a>
+    </form>
+    
+
+
+   
+</body>
+</html>
